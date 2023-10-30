@@ -1,0 +1,6 @@
+<!-- Module Include File -->
+<!-- Types -->
+<types>
+  <!--com.tridiumSamples.rpcSamples.accessingJavaMethodInJs-->
+  <type class="com.tridiumSamples.rpcSamples.accessingJavaMethodInJs.BRpcUtil" name="RpcUtil"/>
+</types>

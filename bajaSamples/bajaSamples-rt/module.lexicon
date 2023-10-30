@@ -1,0 +1,11 @@
+#
+# Lexicon for the bajaSamples module.
+#
+
+# for BCompassEnum
+# by default they get capitalized in the field editor dropdown, ie south -> South etc
+# but you can override this if required, for example:
+north=N
+south=S
+east=E
+west=W

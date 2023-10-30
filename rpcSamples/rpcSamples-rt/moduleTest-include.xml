@@ -1,0 +1,4 @@
+<types>
+  <!--test.com.tridiumSamples.rpcSamples.accessingJavaMethodInJs-->
+  <type class="test.com.tridiumSamples.rpcSamples.accessingJavaMethodInJs.BRpcUtilTest" name="RpcUtilTest"/>
+</types>

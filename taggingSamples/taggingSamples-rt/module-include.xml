@@ -1,0 +1,9 @@
+<!-- Module Include File -->
+<!-- Types -->
+<types>
+  <!--com.tridiumSamples.taggingSamples.tagImpliedFromAnotherTag-->
+  <type class="com.tridiumSamples.taggingSamples.tagImpliedFromAnotherTag.BCountryRule" name="CountryRule"/>
+  <type class="com.tridiumSamples.taggingSamples.tagImpliedFromAnotherTag.BCountryTag" name="CountryTag"/>
+  <type class="com.tridiumSamples.taggingSamples.tagImpliedFromAnotherTag.BHasTownTagCondition" name="HasTownTagCondition"/>
+  <type class="com.tridiumSamples.taggingSamples.tagImpliedFromAnotherTag.BTownTag" name="TownTag"/>
+</types>

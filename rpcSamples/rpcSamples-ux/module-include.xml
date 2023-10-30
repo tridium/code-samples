@@ -1,0 +1,6 @@
+<types>
+  <!--com.tridiumSamples.rpcSamples.ux.accessingJavaMethodInJs-->
+  <type class="com.tridiumSamples.rpcSamples.ux.accessingJavaMethodInJs.BRpcLookupWidget" name="RpcLookupWidget"/>
+  <!--com.tridiumSamples.rpcSamples.ux-->
+  <type class="com.tridiumSamples.rpcSamples.ux.BRpcSamplesJsBuild" name="RpcSamplesJsBuild"/>
+</types>

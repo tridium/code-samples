@@ -1,0 +1,5 @@
+<types>
+  <!--test.com.tridiumSamples.bajaSamples.dynamicAction-->
+  <type class="test.com.tridiumSamples.bajaSamples.dynamicAction.BComponentWithDynamicActionTest" name="ComponentWithDynamicActionTest"/>
+  <type class="test.com.tridiumSamples.bajaSamples.lexiconizingAnEnum.BEnumLexiconTest" name="EnumLexiconTest"/>
+</types>

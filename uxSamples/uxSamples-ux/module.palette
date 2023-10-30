@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bajaObjectGraph version="4.0" reversibleEncodingKeySource="none" reversibleEncodingValidator="[null.1]=" >
+  <p m="b=baja" t="b:UnrestrictedFolder">
+
+    <p n="NeqlAndBqlWidget" m="wb=workbench" t="wb:WebWidget">
+      <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,280.0,220.0"/>
+      <p n="js" t="b:Ord" v="view:uxSamples:NeqlAndBqlWidget"/>
+    </p>
+
+  </p>
+</bajaObjectGraph>

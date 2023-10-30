@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bajaObjectGraph version="4.0" reversibleEncodingKeySource="none" reversibleEncodingValidator="[null.1]=" >
+  <p m="b=baja" t="b:UnrestrictedFolder">
+
+    <p n="MyTagDictionary" m="td=tagdictionary" t="td:SmartTagDictionary">
+      <p n="namespace" v="mtd"/>
+
+      <p n="tagDefinitions" t="td:TagInfoList">
+        <p n="townTag" m="tgg=taggingSamples" t="tgg:TownTag"/>
+      </p>
+      <p n="tagRules" t="td:TagRuleList">
+        <p n="CountryRule" t="tgg:CountryRule"/>
+      </p>
+
+    </p>
+  </p>
+</bajaObjectGraph>

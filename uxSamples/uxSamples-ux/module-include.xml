@@ -1,0 +1,7 @@
+<types>
+  <!--com.tridiumSamples.uxSamples.ux-->
+  <type class="com.tridiumSamples.uxSamples.ux.BUxSamplesCssResource" name="UxSamplesCssResource"/>
+  <type class="com.tridiumSamples.uxSamples.ux.BUxSamplesJsBuild" name="UxSamplesJsBuild"/>
+  <!--com.tridiumSamples.uxSamples.ux.neqlAndBqlInJs-->
+  <type class="com.tridiumSamples.uxSamples.ux.neqlAndBqlInJs.BNeqlAndBqlWidget" name="NeqlAndBqlWidget"/>
+</types>

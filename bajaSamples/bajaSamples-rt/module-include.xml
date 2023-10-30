@@ -1,0 +1,13 @@
+<!-- Module Include File -->
+<!-- Types -->
+<types>
+  <!--com.tridiumSamples.bajaSamples.dynamicAction-->
+  <type class="com.tridiumSamples.bajaSamples.dynamicAction.BComponentWithDynamicAction" name="ComponentWithDynamicAction"/>
+  <type class="com.tridiumSamples.bajaSamples.dynamicAction.BDynamicAction" name="DynamicAction"/>
+  <!--com.tridiumSamples.bajaSamples.lexiconizingAnEnum-->
+  <type class="com.tridiumSamples.bajaSamples.lexiconizingAnEnum.BCompassEnum" name="CompassEnum"/>
+</types>
+<lexicons>
+  <lexicon language="fr" module="bajaSamples" resource="lexicons/bajaSamples.lexicon.fr"/>
+  <lexicon language="de" module="bajaSamples" resource="lexicons/bajaSamples.lexicon.de"/>
+</lexicons>

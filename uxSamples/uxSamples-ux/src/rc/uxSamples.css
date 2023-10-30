@@ -1,0 +1,11 @@
+
+.NeqlAndBqlWidget {
+  border: 2px solid #777;
+  padding: 1em;
+}
+.NeqlAndBqlWidget .title {
+  text-align: center;
+  padding-bottom: 2em;
+  font-size: large;
+  font-weight: bold;
+}

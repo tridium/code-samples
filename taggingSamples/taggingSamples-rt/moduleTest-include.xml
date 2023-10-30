@@ -1,0 +1,4 @@
+<types>
+  <!--test.com.tridiumSamples.taggingSamples.tagImpliedFromAnotherTag-->
+  <type class="test.com.tridiumSamples.taggingSamples.tagImpliedFromAnotherTag.BTagImpliedFromAnotherTagTest" name="TagImpliedFromAnotherTagTest"/>
+</types>

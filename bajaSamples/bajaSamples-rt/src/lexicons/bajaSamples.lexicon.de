@@ -1,0 +1,9 @@
+#
+# DE lexicon for the bajaSamples module.
+#
+
+# for BCompassEnum, note the use of the unicode (\u00FC) for u umlaut
+north=Nord
+south=S\u00FCd
+east=Ost
+west=West

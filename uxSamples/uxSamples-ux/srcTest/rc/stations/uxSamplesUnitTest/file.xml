@@ -1,0 +1,846 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bajaObjectGraph version="4.0" reversibleEncodingKeySource="keyring" FIPSEnabled="false" >
+<p h="1" c="1" m="b=baja" t="b:Station">
+ <p n="stationName" v="uxSamples"/>
+ <p n="Services" h="2" t="b:ServiceContainer">
+  <!-- /Services/UserService -->
+  <p n="UserService" h="3" c="2" t="b:UserService">
+   <p n="userPrototypes" h="6" t="b:UserPrototypes">
+    <p n="defaultPrototype" h="7" t="b:User">
+     <p n="permissions" f="1"/>
+     <p n="authenticator" h="13a" t="b:PasswordAuthenticator">
+      <p n="passwordConfig" h="13b" t="b:UserPasswordConfiguration">
+      </p>
+     </p>
+     <p n="navFile" f="1"/>
+     <p n="version" v="uxSamples:1696326166752"/>
+     <p n="typeVersion" v="1"/>
+     <!-- /Services/UserService/userPrototypes/defaultPrototype/authenticationScheme -->
+     <p n="authenticationScheme" h="12f" t="b:DigestAuthenticationScheme">
+      <p n="globalPasswordConfiguration" h="13c" t="b:GlobalPasswordConfiguration">
+      </p>
+     </p>
+     <!-- /Services/UserService/userPrototypes/defaultPrototype/web_WebProfileConfig -->
+     <p n="web_WebProfileConfig" h="3f" m="w=web" t="w:WebProfileConfig">
+      <p n="typeSpec" t="b:TypeSpec" v="workbench:DefaultWbWebProfile"/>
+      <p n="selectedWorkbenchTheme" f="r" x="fieldEditor=s:workbench$3aFrozenEnumFE|uxFieldEditor=s:webEditors$3aFrozenEnumEditor" t="b:DynamicEnum" v="1@{Lucid=0,Zebra=1}"/>
+      <p n="showWebStartAddressBar" f="r" t="b:Boolean" v="true"/>
+      <p n="showWebStartStatusBar" f="r" t="b:Boolean" v="true"/>
+      <p n="moduleDependenciesFacets" f="rh" t="b:Facets" v="stationModuleDependencies=s:themeZebra$3bworkbench"/>
+     </p>
+     <!-- /Services/UserService/userPrototypes/defaultPrototype/baja_UserPasswordConfiguration -->
+     <p n="baja_UserPasswordConfiguration" h="40" t="b:UserPasswordConfiguration">
+     </p>
+     <!-- /Services/UserService/userPrototypes/defaultPrototype/web_MobileWebProfileConfig -->
+     <p n="web_MobileWebProfileConfig" h="46" t="w:MobileWebProfileConfig">
+      <p n="typeSpec" t="b:TypeSpec" v="hx:DefaultHxProfile"/>
+      <p n="selectedHxTheme" f="r" x="fieldEditor=s:workbench$3aFrozenEnumFE|uxFieldEditor=s:webEditors$3aFrozenEnumEditor" t="b:DynamicEnum" v="1@{Lucid=0,Zebra=1}"/>
+      <p n="moduleDependenciesFacets" f="rh" t="b:Facets" v="stationModuleDependencies=s:hx$3bthemeZebra"/>
+     </p>
+    </p>
+   </p>
+   <p n="SMANotificationSettings" h="150" t="b:SMANotificationSettings">
+   </p>
+   <p n="licenseExpirationNotificationSettings" h="151" t="b:LicenseExpirationNotificationSettings">
+   </p>
+   <!-- /Services/UserService/guest -->
+   <p n="guest" h="5" t="b:User">
+    <p n="enabled" v="false"/>
+    <p n="permissions" f="r"/>
+    <p n="authenticator" h="137" t="b:PasswordAuthenticator">
+     <p n="passwordConfig" h="138" t="b:UserPasswordConfiguration">
+     </p>
+    </p>
+    <p n="version" v="uxSamples:1696326166752"/>
+    <p n="typeVersion" v="1"/>
+    <p n="password" f="o" t="b:Password" v="[pbkdf2-sha256.1]=89432383034d6feba726f20ea5de910f:4096:c99a60c9de2e27616d08337c673ee8ce6ed4e2437fc07fea49c482350f9f4006"/>
+    <!-- /Services/UserService/guest/authenticationScheme -->
+    <p n="authenticationScheme" h="12d" t="b:DigestAuthenticationScheme">
+     <p n="globalPasswordConfiguration" h="139" t="b:GlobalPasswordConfiguration">
+     </p>
+    </p>
+    <!-- /Services/UserService/guest/web_WebProfileConfig -->
+    <p n="web_WebProfileConfig" h="41" t="w:WebProfileConfig">
+     <p n="typeSpec" t="b:TypeSpec" v="workbench:DefaultWbWebProfile"/>
+     <p n="selectedWorkbenchTheme" f="r" x="fieldEditor=s:workbench$3aFrozenEnumFE|uxFieldEditor=s:webEditors$3aFrozenEnumEditor" t="b:DynamicEnum" v="1@{Lucid=0,Zebra=1}"/>
+     <p n="showWebStartAddressBar" f="r" t="b:Boolean" v="true"/>
+     <p n="showWebStartStatusBar" f="r" t="b:Boolean" v="true"/>
+     <p n="moduleDependenciesFacets" f="rh" t="b:Facets" v="stationModuleDependencies=s:themeZebra$3bworkbench"/>
+    </p>
+    <!-- /Services/UserService/guest/baja_UserPasswordConfiguration -->
+    <p n="baja_UserPasswordConfiguration" h="42" t="b:UserPasswordConfiguration">
+    </p>
+    <!-- /Services/UserService/guest/web_MobileWebProfileConfig -->
+    <p n="web_MobileWebProfileConfig" h="47" t="w:MobileWebProfileConfig">
+     <p n="typeSpec" t="b:TypeSpec" v="hx:DefaultHxProfile"/>
+     <p n="selectedHxTheme" f="r" x="fieldEditor=s:workbench$3aFrozenEnumFE|uxFieldEditor=s:webEditors$3aFrozenEnumEditor" t="b:DynamicEnum" v="1@{Lucid=0,Zebra=1}"/>
+     <p n="moduleDependenciesFacets" f="rh" t="b:Facets" v="stationModuleDependencies=s:hx$3bthemeZebra"/>
+    </p>
+   </p>
+   <!-- /Services/UserService/admin -->
+   <p n="admin" h="4" t="b:User">
+    <p n="expiration" f="r"/>
+    <p n="permissions" f="r" t="b:PermissionsMap" v="super"/>
+    <p n="authenticator" h="13d" t="b:PasswordAuthenticator">
+     <p n="password" t="b:Password" v="[pbkdf2-sha256.1]=8d2e2b4e29e52a4cf36b89ecc1cabfb7:4096:e8ddc138e177e579a7432a85f0b6b8e61be2cb6b494f505befd39e93763d878d"/>
+     <p n="passwordConfig" h="13e" t="b:UserPasswordConfiguration">
+     </p>
+    </p>
+    <p n="version" v="uxSamples:1696326166752"/>
+    <p n="roles" v="admin"/>
+    <p n="typeVersion" v="1"/>
+    <p n="password" t="b:Password" v="[pbkdf2-sha256.1]=7ac25e3d955bada439491f27c4849e50:4096:f595798bfaad36d662dcbc60463abf42015a4b3abd8371ec924ed1646032c31c"/>
+    <!-- /Services/UserService/admin/web_WebProfileConfig -->
+    <p n="web_WebProfileConfig" h="43" t="w:WebProfileConfig">
+     <p n="typeSpec" t="b:TypeSpec" v="hx:HTML5HxProfile"/>
+     <p n="selectedHxTheme" f="r" t="b:DynamicEnum" v="1@{Lucid=0,Zebra=1}"/>
+     <p n="hxWbViews" f="r" x="trueText=s:$25lexicon$28bajaui$3adialog$2eyes$29$25|falseText=s:$25lexicon$28bajaui$3adialog$2eno$29$25" t="b:Boolean" v="true"/>
+     <p n="navTreeSideBar" f="r" x="trueText=s:$25lexicon$28bajaui$3adialog$2eyes$29$25|falseText=s:$25lexicon$28bajaui$3adialog$2eno$29$25" t="b:Boolean" v="true"/>
+     <p n="searchSideBar" f="r" x="trueText=s:$25lexicon$28bajaui$3adialog$2eyes$29$25|falseText=s:$25lexicon$28bajaui$3adialog$2eno$29$25" t="b:Boolean" v="true"/>
+     <p n="paletteSideBar" f="r" x="trueText=s:$25lexicon$28bajaui$3adialog$2eyes$29$25|falseText=s:$25lexicon$28bajaui$3adialog$2eno$29$25" t="b:Boolean" v="true"/>
+     <p n="navFileTree" f="r" x="trueText=s:$25lexicon$28bajaui$3adialog$2eyes$29$25|falseText=s:$25lexicon$28bajaui$3adialog$2eno$29$25" t="b:Boolean" v="true"/>
+     <p n="configTree" f="r" x="trueText=s:$25lexicon$28bajaui$3adialog$2eyes$29$25|falseText=s:$25lexicon$28bajaui$3adialog$2eno$29$25" t="b:Boolean" v="true"/>
+     <p n="filesTree" f="r" x="trueText=s:$25lexicon$28bajaui$3adialog$2eyes$29$25|falseText=s:$25lexicon$28bajaui$3adialog$2eno$29$25" t="b:Boolean" v="true"/>
+     <p n="historiesTree" f="r" x="trueText=s:$25lexicon$28bajaui$3adialog$2eyes$29$25|falseText=s:$25lexicon$28bajaui$3adialog$2eno$29$25" t="b:Boolean" v="true"/>
+     <p n="hierarchiesTree" f="r" x="trueText=s:$25lexicon$28bajaui$3adialog$2eyes$29$25|falseText=s:$25lexicon$28bajaui$3adialog$2eno$29$25" t="b:Boolean" v="true"/>
+     <p n="viewSelection" f="r" x="trueText=s:$25lexicon$28bajaui$3adialog$2eyes$29$25|falseText=s:$25lexicon$28bajaui$3adialog$2eno$29$25" t="b:Boolean" v="true"/>
+     <p n="moduleDependenciesFacets" f="rh" t="b:Facets" v="stationModuleDependencies=s:hx$3bthemeZebra"/>
+    </p>
+    <!-- /Services/UserService/admin/baja_UserPasswordConfiguration -->
+    <p n="baja_UserPasswordConfiguration" h="44" t="b:UserPasswordConfiguration">
+    </p>
+    <!-- /Services/UserService/admin/web_MobileWebProfileConfig -->
+    <p n="web_MobileWebProfileConfig" h="48" t="w:MobileWebProfileConfig">
+     <p n="typeSpec" t="b:TypeSpec" v="hx:DefaultHxProfile"/>
+     <p n="selectedHxTheme" f="r" x="fieldEditor=s:workbench$3aFrozenEnumFE|uxFieldEditor=s:webEditors$3aFrozenEnumEditor" t="b:DynamicEnum" v="1@{Lucid=0,Zebra=1}"/>
+     <p n="moduleDependenciesFacets" f="rh" t="b:Facets" v="stationModuleDependencies=s:hx$3bthemeZebra"/>
+    </p>
+   </p>
+  </p>
+  <!-- /Services/CategoryService -->
+  <p n="CategoryService" h="8" c="2" t="b:CategoryService">
+   <p n="ordMap" t="b:OrdToCategoryMap" v="file:^nav=3&#xa;file:^px=3&#xa;file:^=2"/>
+   <!-- /Services/CategoryService/User -->
+   <p n="User" h="9" t="b:Category">
+    <p n="index" v="1"/>
+   </p>
+   <!-- /Services/CategoryService/Admin -->
+   <p n="Admin" h="a" t="b:Category">
+    <p n="index" v="2"/>
+   </p>
+  </p>
+  <!-- /Services/JobService -->
+  <p n="JobService" h="b" t="b:JobService">
+  </p>
+  <!-- /Services/AlarmService -->
+  <p n="AlarmService" h="c" m="a=alarm" t="a:AlarmService">
+   <p n="alarmDbConfig" h="13f" t="a:FileAlarmDbConfig">
+   </p>
+   <p n="defaultAlarmClass" h="d" t="a:AlarmClass">
+   </p>
+   <p n="escalationTimeTrigger" h="e" m="c=control" t="c:TimeTrigger">
+    <p n="triggerMode" t="c:IntervalTriggerMode" v="false;00:00:00.000;23:59:59.999;60000;7f"/>
+    <p n="lastTrigger" t="b:AbsTime" v="2023-10-03T11:06:46.685+01:00"/>
+    <p n="nextTrigger" t="b:AbsTime" v="2023-10-03T11:07:46.660+01:00"/>
+   </p>
+   <a n="escalateAlarms" f="haAL"/>
+  </p>
+  <!-- /Services/HistoryService -->
+  <p n="HistoryService" h="f" m="h=history" t="h:HistoryService">
+   <p n="archiveHistoryProviders" h="152" t="h:ArchiveHistoryProviders">
+   </p>
+   <p n="historyGroupings" h="10" t="h:HistoryGroupings">
+   </p>
+  </p>
+  <!-- /Services/AuditHistory -->
+  <p n="AuditHistory" h="11" t="h:AuditHistoryService">
+   <p n="historyConfig" h="12" t="h:HistoryConfig">
+    <p n="id" t="h:HistoryId" v="/uxSamples/AuditHistory"/>
+    <p n="source" t="b:OrdList" v="station:|h:11"/>
+    <p n="timeZone" t="b:TimeZone" v="Europe/London;0;3600000;01:00:00.000,utc,march,25,on or after,sunday,undefined;01:00:00.000,utc,october,25,on or after,sunday,undefined"/>
+    <p n="recordType" t="b:TypeSpec" v="history:AuditRecord"/>
+    <p n="schema" t="h:HistorySchema" v="timestamp,baja:AbsTime;operation,baja:String;target,baja:String;slotName,baja:String;oldValue,baja:String;value,baja:String;userName,baja:String"/>
+   </p>
+   <p n="SecurityAuditHistorySource" h="153" t="h:SecurityAuditHistorySource">
+    <p n="historyConfig" h="154" t="h:HistoryConfig">
+     <p n="id" t="h:HistoryId" v="/uxSamples/SecurityHistory"/>
+     <p n="source" t="b:OrdList" v="station:|h:153"/>
+     <p n="timeZone" t="b:TimeZone" v="Europe/London;0;3600000;01:00:00.000,utc,march,25,on or after,sunday,undefined;01:00:00.000,utc,october,25,on or after,sunday,undefined"/>
+     <p n="recordType" t="b:TypeSpec" v="history:SecurityAuditRecord"/>
+     <p n="schema" t="h:HistorySchema" v="timestamp,baja:AbsTime;operation,baja:String;userName,baja:String;message,baja:String"/>
+    </p>
+   </p>
+  </p>
+  <!-- /Services/LogHistory -->
+  <p n="LogHistory" h="13" t="h:LogHistoryService">
+   <p n="historyConfig" h="14" t="h:HistoryConfig">
+    <p n="id" t="h:HistoryId" v="/uxSamples/LogHistory"/>
+    <p n="source" t="b:OrdList" v="station:|h:13"/>
+    <p n="timeZone" t="b:TimeZone" v="Europe/London;0;3600000;01:00:00.000,utc,march,25,on or after,sunday,undefined;01:00:00.000,utc,october,25,on or after,sunday,undefined"/>
+    <p n="recordType" t="b:TypeSpec" v="history:LogRecord"/>
+    <p n="schema" t="h:HistorySchema" v="timestamp,baja:AbsTime;logName,baja:String;severity,baja:Integer;message,baja:String;exception,baja:String"/>
+   </p>
+  </p>
+  <!-- /Services/ProgramService -->
+  <p n="ProgramService" h="15" c="2" m="p=program" t="p:ProgramService">
+  </p>
+  <!-- /Services/BackupService -->
+  <p n="BackupService" h="16" m="bk=backup" t="bk:BackupService">
+  </p>
+  <!-- /Services/WebService -->
+  <p n="WebService" h="17" t="w:WebService">
+   <p n="httpPort" h="140" t="b:ServerPort">
+    <p n="publicServerPort" v="80"/>
+   </p>
+   <p n="httpsPort" h="141" t="b:ServerPort">
+    <p n="publicServerPort" v="443"/>
+   </p>
+   <p n="httpsCert" f="rh1"/>
+   <p n="mainCertAliasAndPassword" f="1" t="b:CertificateAliasAndPassword">
+    <p n="alias" v="tridium"/>
+   </p>
+   <p n="serverCertificateHealth" f="rt"/>
+   <p n="xFrameOptions" f="rh1"/>
+   <p n="clientEnvironments" h="18" t="w:ClientEnvironments">
+    <p n="envServlet" h="19" t="w:ClientEnvServlet">
+    </p>
+    <!-- /Services/WebService/clientEnvironments/mobile -->
+    <p n="mobile" h="45" t="w:MobileClientEnvironment">
+    </p>
+   </p>
+   <p n="warmupConfig" h="155" t="w:WebWarmupConfig">
+    <p n="userActivityFound" v="true"/>
+    <p n="lastWarmupTime" t="b:RelTime" v="211"/>
+    <!-- /Services/WebService/warmupConfig/hx_HxAppWarmup -->
+    <p n="hx_HxAppWarmup" h="175" m="hx=hx" t="hx:HxAppWarmup">
+     <p n="userActivityFound" v="true"/>
+     <p n="lastWarmupTime" t="b:RelTime" v="210"/>
+    </p>
+    <!-- /Services/WebService/warmupConfig/hx_HxPxWarmup -->
+    <p n="hx_HxPxWarmup" h="176" t="hx:HxPxWarmup">
+    </p>
+   </p>
+   <p n="httpHeaderProviders" h="156" t="w:HttpHeaderProviders">
+    <p n="contentSecurityPolicy" h="157" t="w:CspHeaderProvider">
+    </p>
+    <p n="xContentTypeOptions" h="158" t="w:XContentTypeOptionsHeaderProvider">
+    </p>
+    <p n="xFrameOptions" h="159" t="w:XFrameOptionsHeaderProvider">
+     <p n="xFrameOptions" t="w:XFrameOptionsEnum" v="sameorigin"/>
+    </p>
+    <p n="xXssProtection" h="15a" t="w:XXssProtectionHeaderProvider">
+    </p>
+   </p>
+   <p n="hostHeaderValidationSettings" h="15b" t="w:HostHeaderValidationSettings">
+    <p n="validHostHeaders" v="UK2ALT9JDBQV3"/>
+   </p>
+   <!-- /Services/WebService/JettyWebServer -->
+   <p n="JettyWebServer" h="12a" m="j=jetty" t="j:JettyWebServer">
+   </p>
+   <!-- /Services/WebService/UserDataConfig -->
+   <p n="UserDataConfig" h="174" t="w:UserDataConfig">
+   </p>
+   <p n="displayNames" f="h" t="b:NameMap" v="{UserDataConfig=%lexicon(web:userDataConfig)%;}"/>
+   <p n="slotFacets_" f="h" t="b:FacetsMap" v="{mainCertAliasAndPassword/alias=purposeId\=s:SERVER_CERT;}"/>
+  </p>
+  <!-- /Services/BoxService -->
+  <p n="BoxService" h="c8" m="box=box" t="box:BoxService">
+   <p n="enabled" f="h"/>
+   <p n="servlet" h="c9" t="box:BoxServlet">
+   </p>
+   <p n="webSocketAcceptor" h="ca" t="box:BoxWebSocketAcceptor">
+   </p>
+   <p n="foxAcceptor" h="cb" t="box:FoxBoxAcceptor">
+   </p>
+   <p n="sys" h="cc" t="box:SysChannel">
+   </p>
+   <p n="reg" h="cd" t="box:RegistryChannel">
+   </p>
+   <p n="timeZone" h="14f" t="box:TimeZoneChannel">
+   </p>
+   <p n="unit" h="142" t="box:UnitChannel">
+   </p>
+   <p n="history" h="143" t="box:HistoryChannel">
+   </p>
+   <p n="alarm" h="144" t="box:AlarmChannel">
+   </p>
+   <p n="ssession" h="ce" t="box:ServerSessionChannel">
+   </p>
+   <p n="ord" h="cf" t="box:OrdChannel">
+   </p>
+   <p n="transfer" h="14e" t="box:TransferChannel">
+   </p>
+   <!-- /Services/BoxService/hierarchy -->
+   <p n="hierarchy" h="173" m="hierarchy=hierarchy" t="hierarchy:HierarchyBoxChannel">
+   </p>
+  </p>
+  <!-- /Services/AuthenticationService -->
+  <p n="AuthenticationService" h="2d" t="b:AuthenticationService">
+   <p n="authenticationSchemes" h="133" t="b:AuthenticationSchemeFolder">
+    <!-- /Services/AuthenticationService/authenticationSchemes/DigestScheme -->
+    <p n="DigestScheme" h="134" t="b:DigestAuthenticationScheme">
+     <p n="globalPasswordConfiguration" h="145" t="b:GlobalPasswordConfiguration">
+      <p n="passwordStrength" t="b:PasswordStrength">
+       <p n="minimumLength" v="8"/>
+       <p n="minimumLowerCase" v="0"/>
+       <p n="minimumUpperCase" v="0"/>
+       <p n="minimumDigits" v="0"/>
+      </p>
+     </p>
+    </p>
+    <!-- /Services/AuthenticationService/authenticationSchemes/LegacyDigestScheme -->
+    <p n="LegacyDigestScheme" h="135" t="b:LegacyDigestAuthenticationScheme">
+     <p n="globalPasswordConfiguration" h="146" t="b:GlobalPasswordConfiguration">
+     </p>
+    </p>
+   </p>
+   <p n="ssoConfiguration" h="15c" t="b:SSOConfiguration">
+    <p n="autoAttemptSingleSignOn" f="r"/>
+   </p>
+  </p>
+  <!-- /Services/FoxService -->
+  <p n="FoxService" h="148" m="f=fox" t="f:FoxService">
+   <p n="foxPort" h="149" t="b:ServerPort">
+    <p n="publicServerPort" v="1913"/>
+   </p>
+   <p n="foxsPort" h="14a" t="b:ServerPort">
+    <p n="publicServerPort" v="4913"/>
+   </p>
+   <p n="foxsCert" f="rh1"/>
+   <p n="certAliasAndPassword" f="1" t="b:CertificateAliasAndPassword">
+    <p n="alias" v="tridium"/>
+   </p>
+   <p n="serverCertificateHealth" f="rt"/>
+   <p n="serverConnections" h="14b" t="f:ServerConnections">
+   </p>
+   <p n="supportLegacyClients" t="b:DynamicEnum" v="0@{Default$3a$20Yes$20$28may$20change$20in$20future$20version$29=0,No$20$28Recommended$29=1,Yes=2}?lexicon=s:fox"/>
+   <p n="slotFacets_" f="h" t="b:FacetsMap" v="{certAliasAndPassword/alias=purposeId\=s:SERVER_CERT;}"/>
+  </p>
+  <!-- /Services/RoleService -->
+  <p n="RoleService" h="14c" t="b:RoleService">
+   <p n="admin" h="14d" t="b:AdminRole">
+   </p>
+  </p>
+  <!-- /Services/TagDictionaryService -->
+  <p n="TagDictionaryService" h="1f0" m="td=tagdictionary" t="td:TagDictionaryService">
+   <p n="neqlizeOptions" t="td:NeqlizeOptions">
+    <p n="defaultExcludedRelations" v="n:child, n:parent, n:tagGroup"/>
+    <p n="defaultExcludedTags" v="n:bindHints, n:displayName, n:geo*,&#xa;n:hasPxView, n:history, n:name, n:node,&#xa;n:ordInSession, n:station,&#xa;n:targetSlotHint, n:type, n:vendor,&#xa;n:version"/>
+   </p>
+   <p n="Niagara" h="1f1" t="td:NiagaraTagDictionary">
+    <p n="version" v="1.5"/>
+    <p n="tagDefinitions" h="1f2" t="td:TagInfoList">
+     <!-- /Services/TagDictionaryService/Niagara/tagDefinitions/bindHints -->
+     <p n="bindHints" h="1f7" t="td:SimpleTagInfo">
+      <p n="validity" h="1f8" t="td:Always">
+      </p>
+      <p n="defValue" t="b:String" v=""/>
+     </p>
+     <!-- /Services/TagDictionaryService/Niagara/tagDefinitions/device -->
+     <p n="device" h="1f9" t="td:SimpleTagInfo">
+      <p n="validity" h="1fa" t="td:IsTypeCondition">
+       <p n="objectType" t="b:TypeSpec" v="driver:Device"/>
+      </p>
+      <a n="addDataPolicy" f="h"/>
+     </p>
+     <!-- /Services/TagDictionaryService/Niagara/tagDefinitions/displayName -->
+     <p n="displayName" h="1fb" t="td:SimpleTagInfo">
+      <p n="validity" h="1fc" t="td:IsTypeCondition">
+       <p n="objectType" t="b:TypeSpec" v="baja:Complex"/>
+      </p>
+      <p n="defValue" t="b:String" v=""/>
+     </p>
+     <!-- /Services/TagDictionaryService/Niagara/tagDefinitions/geoAddr -->
+     <p n="geoAddr" h="1fd" t="td:SimpleTagInfo">
+      <p n="validity" h="1fe" t="td:And">
+       <!-- /Services/TagDictionaryService/Niagara/tagDefinitions/geoAddr/validity/a -->
+       <p n="a" f="r" h="1ff" t="td:BooleanFilter">
+        <p n="filter" v="hs:site"/>
+       </p>
+       <!-- /Services/TagDictionaryService/Niagara/tagDefinitions/geoAddr/validity/a1 -->
+       <p n="a1" f="r" h="200" t="td:IsTypeCondition">
+        <p n="objectType" t="b:TypeSpec" v="baja:Component"/>
+       </p>
+      </p>
+      <p n="defValue" t="b:String" v=""/>
+     </p>
+     <!-- /Services/TagDictionaryService/Niagara/tagDefinitions/geoCity -->
+     <p n="geoCity" h="201" t="td:SimpleTagInfo">
+      <p n="validity" h="202" t="td:And">
+       <!-- /Services/TagDictionaryService/Niagara/tagDefinitions/geoCity/validity/a -->
+       <p n="a" f="r" h="203" t="td:BooleanFilter">
+        <p n="filter" v="hs:site"/>
+       </p>
+       <!-- /Services/TagDictionaryService/Niagara/tagDefinitions/geoCity/validity/a1 -->
+       <p n="a1" f="r" h="204" t="td:IsTypeCondition">
+        <p n="objectType" t="b:TypeSpec" v="baja:Component"/>
+       </p>
+      </p>
+      <p n="defValue" t="b:String" v=""/>
+     </p>
+     <!-- /Services/TagDictionaryService/Niagara/tagDefinitions/geoCoord -->
+     <p n="geoCoord" h="205" t="td:SimpleTagInfo">
+      <p n="validity" h="206" t="td:And">
+       <!-- /Services/TagDictionaryService/Niagara/tagDefinitions/geoCoord/validity/a -->
+       <p n="a" f="r" h="207" t="td:BooleanFilter">
+        <p n="filter" v="hs:site"/>
+       </p>
+       <!-- /Services/TagDictionaryService/Niagara/tagDefinitions/geoCoord/validity/a1 -->
+       <p n="a1" f="r" h="208" t="td:IsTypeCondition">
+        <p n="objectType" t="b:TypeSpec" v="baja:Component"/>
+       </p>
+      </p>
+      <p n="defValue" t="b:String" v=""/>
+     </p>
+     <!-- /Services/TagDictionaryService/Niagara/tagDefinitions/geoCountry -->
+     <p n="geoCountry" h="209" t="td:SimpleTagInfo">
+      <p n="validity" h="20a" t="td:And">
+       <!-- /Services/TagDictionaryService/Niagara/tagDefinitions/geoCountry/validity/a -->
+       <p n="a" f="r" h="20b" t="td:BooleanFilter">
+        <p n="filter" v="hs:site"/>
+       </p>
+       <!-- /Services/TagDictionaryService/Niagara/tagDefinitions/geoCountry/validity/a1 -->
+       <p n="a1" f="r" h="20c" t="td:IsTypeCondition">
+        <p n="objectType" t="b:TypeSpec" v="baja:Component"/>
+       </p>
+      </p>
+      <p n="defValue" t="b:String" v=""/>
+     </p>
+     <!-- /Services/TagDictionaryService/Niagara/tagDefinitions/geoCounty -->
+     <p n="geoCounty" h="20d" t="td:SimpleTagInfo">
+      <p n="validity" h="20e" t="td:And">
+       <!-- /Services/TagDictionaryService/Niagara/tagDefinitions/geoCounty/validity/a -->
+       <p n="a" f="r" h="20f" t="td:BooleanFilter">
+        <p n="filter" v="hs:site"/>
+       </p>
+       <!-- /Services/TagDictionaryService/Niagara/tagDefinitions/geoCounty/validity/a1 -->
+       <p n="a1" f="r" h="210" t="td:IsTypeCondition">
+        <p n="objectType" t="b:TypeSpec" v="baja:Component"/>
+       </p>
+      </p>
+      <p n="defValue" t="b:String" v=""/>
+     </p>
+     <!-- /Services/TagDictionaryService/Niagara/tagDefinitions/geoPostalCode -->
+     <p n="geoPostalCode" h="211" t="td:SimpleTagInfo">
+      <p n="validity" h="212" t="td:And">
+       <!-- /Services/TagDictionaryService/Niagara/tagDefinitions/geoPostalCode/validity/a -->
+       <p n="a" f="r" h="213" t="td:BooleanFilter">
+        <p n="filter" v="hs:site"/>
+       </p>
+       <!-- /Services/TagDictionaryService/Niagara/tagDefinitions/geoPostalCode/validity/a1 -->
+       <p n="a1" f="r" h="214" t="td:IsTypeCondition">
+        <p n="objectType" t="b:TypeSpec" v="baja:Component"/>
+       </p>
+      </p>
+      <p n="defValue" t="b:String" v=""/>
+     </p>
+     <!-- /Services/TagDictionaryService/Niagara/tagDefinitions/geoState -->
+     <p n="geoState" h="215" t="td:SimpleTagInfo">
+      <p n="validity" h="216" t="td:And">
+       <!-- /Services/TagDictionaryService/Niagara/tagDefinitions/geoState/validity/a -->
+       <p n="a" f="r" h="217" t="td:BooleanFilter">
+        <p n="filter" v="hs:site"/>
+       </p>
+       <!-- /Services/TagDictionaryService/Niagara/tagDefinitions/geoState/validity/a1 -->
+       <p n="a1" f="r" h="218" t="td:IsTypeCondition">
+        <p n="objectType" t="b:TypeSpec" v="baja:Component"/>
+       </p>
+      </p>
+      <p n="defValue" t="b:String" v=""/>
+     </p>
+     <!-- /Services/TagDictionaryService/Niagara/tagDefinitions/geoStreet -->
+     <p n="geoStreet" h="219" t="td:SimpleTagInfo">
+      <p n="validity" h="21a" t="td:And">
+       <!-- /Services/TagDictionaryService/Niagara/tagDefinitions/geoStreet/validity/a -->
+       <p n="a" f="r" h="21b" t="td:BooleanFilter">
+        <p n="filter" v="hs:site"/>
+       </p>
+       <!-- /Services/TagDictionaryService/Niagara/tagDefinitions/geoStreet/validity/a1 -->
+       <p n="a1" f="r" h="21c" t="td:IsTypeCondition">
+        <p n="objectType" t="b:TypeSpec" v="baja:Component"/>
+       </p>
+      </p>
+      <p n="defValue" t="b:String" v=""/>
+     </p>
+     <!-- /Services/TagDictionaryService/Niagara/tagDefinitions/hasPxView -->
+     <p n="hasPxView" h="21d" t="td:SimpleTagInfo">
+      <p n="validity" h="21e" t="td:IsTypeCondition">
+       <p n="objectType" t="b:TypeSpec" v="baja:Object"/>
+      </p>
+      <a n="addDataPolicy" f="h"/>
+     </p>
+     <!-- /Services/TagDictionaryService/Niagara/tagDefinitions/input -->
+     <p n="input" h="21f" t="td:SimpleTagInfo">
+      <p n="validity" h="220" t="td:IsTypeCondition">
+       <p n="objectType" t="b:TypeSpec" v="control:ControlPoint"/>
+      </p>
+      <a n="addDataPolicy" f="h"/>
+     </p>
+     <!-- /Services/TagDictionaryService/Niagara/tagDefinitions/name -->
+     <p n="name" h="221" t="td:SimpleTagInfo">
+      <p n="validity" h="222" t="td:IsTypeCondition">
+       <p n="objectType" t="b:TypeSpec" v="baja:Complex"/>
+      </p>
+      <p n="defValue" t="b:String" v=""/>
+     </p>
+     <!-- /Services/TagDictionaryService/Niagara/tagDefinitions/network -->
+     <p n="network" h="223" t="td:SimpleTagInfo">
+      <p n="validity" h="224" t="td:IsTypeCondition">
+       <p n="objectType" t="b:TypeSpec" v="driver:DeviceNetwork"/>
+      </p>
+      <a n="addDataPolicy" f="h"/>
+     </p>
+     <!-- /Services/TagDictionaryService/Niagara/tagDefinitions/node -->
+     <p n="node" h="225" t="td:SimpleTagInfo">
+      <p n="validity" h="226" t="td:Always">
+      </p>
+      <a n="addDataPolicy" f="h"/>
+     </p>
+     <!-- /Services/TagDictionaryService/Niagara/tagDefinitions/output -->
+     <p n="output" h="227" t="td:SimpleTagInfo">
+      <p n="validity" h="228" t="td:IsTypeCondition">
+       <p n="objectType" t="b:TypeSpec" v="control:ControlPoint"/>
+      </p>
+      <a n="addDataPolicy" f="h"/>
+     </p>
+     <!-- /Services/TagDictionaryService/Niagara/tagDefinitions/point -->
+     <p n="point" h="229" t="td:SimpleTagInfo">
+      <p n="validity" h="22a" t="td:IsTypeCondition">
+       <p n="objectType" t="b:TypeSpec" v="control:ControlPoint"/>
+      </p>
+      <a n="addDataPolicy" f="h"/>
+     </p>
+     <!-- /Services/TagDictionaryService/Niagara/tagDefinitions/schedule -->
+     <p n="schedule" h="22b" t="td:SimpleTagInfo">
+      <p n="validity" h="22c" t="td:IsTypeCondition">
+       <p n="objectType" t="b:TypeSpec" v="schedule:AbstractSchedule"/>
+      </p>
+      <a n="addDataPolicy" f="h"/>
+     </p>
+     <!-- /Services/TagDictionaryService/Niagara/tagDefinitions/station -->
+     <p n="station" h="22d" t="td:SimpleTagInfo">
+      <p n="validity" h="22e" t="td:IsTypeCondition">
+       <p n="objectType" t="b:TypeSpec" v="baja:Complex"/>
+      </p>
+      <p n="defValue" t="b:String" v=""/>
+     </p>
+     <!-- /Services/TagDictionaryService/Niagara/tagDefinitions/targetSlotHint -->
+     <p n="targetSlotHint" h="22f" t="td:SimpleTagInfo">
+      <p n="validity" h="230" t="td:Always">
+      </p>
+      <p n="defValue" t="b:String" v=""/>
+     </p>
+     <!-- /Services/TagDictionaryService/Niagara/tagDefinitions/template -->
+     <p n="template" h="231" t="td:SimpleTagInfo">
+      <p n="validity" h="232" t="td:Always">
+      </p>
+      <a n="addDataPolicy" f="h"/>
+     </p>
+     <!-- /Services/TagDictionaryService/Niagara/tagDefinitions/vendor -->
+     <p n="vendor" h="233" t="td:SimpleTagInfo">
+      <p n="validity" h="234" t="td:Always">
+      </p>
+      <p n="defValue" t="b:String" v=""/>
+     </p>
+     <!-- /Services/TagDictionaryService/Niagara/tagDefinitions/version -->
+     <p n="version" h="235" t="td:SimpleTagInfo">
+      <p n="validity" h="236" t="td:Always">
+      </p>
+      <p n="defValue" t="b:String" v=""/>
+     </p>
+    </p>
+    <p n="tagGroupDefinitions" h="1f3" t="td:TagGroupInfoList">
+    </p>
+    <p n="relationDefinitions" h="1f4" t="td:RelationInfoList">
+     <!-- /Services/TagDictionaryService/Niagara/relationDefinitions/child -->
+     <p n="child" h="237" t="td:ComponentChildRelation">
+     </p>
+     <!-- /Services/TagDictionaryService/Niagara/relationDefinitions/childDevice -->
+     <p n="childDevice" h="238" t="td:ChildDeviceRelation">
+     </p>
+     <!-- /Services/TagDictionaryService/Niagara/relationDefinitions/childPoint -->
+     <p n="childPoint" h="239" t="td:ChildPointRelation">
+     </p>
+     <!-- /Services/TagDictionaryService/Niagara/relationDefinitions/childNullProxyPoint -->
+     <p n="childNullProxyPoint" h="23a" t="td:ChildNullProxyPointRelation">
+     </p>
+     <!-- /Services/TagDictionaryService/Niagara/relationDefinitions/parent -->
+     <p n="parent" h="23b" t="td:ComponentParentRelation">
+     </p>
+     <!-- /Services/TagDictionaryService/Niagara/relationDefinitions/parentDevice -->
+     <p n="parentDevice" h="23c" t="td:ParentDeviceRelation">
+     </p>
+     <!-- /Services/TagDictionaryService/Niagara/relationDefinitions/parentNetwork -->
+     <p n="parentNetwork" h="23d" t="td:ParentNetworkRelation">
+     </p>
+     <!-- /Services/TagDictionaryService/Niagara/relationDefinitions/tagGroup -->
+     <p n="tagGroup" h="23e" t="td:RelationInfo">
+     </p>
+    </p>
+    <p n="tagRules" h="1f5" t="td:TagRuleList">
+     <!-- /Services/TagDictionaryService/Niagara/tagRules/object$20tags -->
+     <p n="object$20tags" h="23f" t="td:TagRule">
+      <p n="condition" h="240" t="td:IsTypeCondition">
+       <p n="objectType" t="b:TypeSpec" v="baja:Complex"/>
+      </p>
+      <p n="tagList" h="241" t="td:TagInfoList">
+       <!-- /Services/TagDictionaryService/Niagara/tagRules/object$20tags/tagList/name -->
+       <p n="name" h="242" t="td:NameTag">
+       </p>
+       <!-- /Services/TagDictionaryService/Niagara/tagRules/object$20tags/tagList/displayName -->
+       <p n="displayName" h="244" t="td:DisplayNameTag">
+       </p>
+       <!-- /Services/TagDictionaryService/Niagara/tagRules/object$20tags/tagList/type -->
+       <p n="type" h="246" t="td:TypeTag">
+       </p>
+       <!-- /Services/TagDictionaryService/Niagara/tagRules/object$20tags/tagList/ordInSession -->
+       <p n="ordInSession" h="248" t="td:OrdInSessionTag">
+        <p n="validity" h="249" t="td:IsTypeCondition">
+         <p n="objectType" t="b:TypeSpec" v="baja:ISpaceNode"/>
+        </p>
+       </p>
+       <!-- /Services/TagDictionaryService/Niagara/tagRules/object$20tags/tagList/station -->
+       <p n="station" h="24a" t="td:StationTag">
+       </p>
+       <!-- /Services/TagDictionaryService/Niagara/tagRules/object$20tags/tagList/hasPxView -->
+       <p n="hasPxView" h="24c" t="td:HasPxViewTag">
+        <a n="addDataPolicy" f="h"/>
+       </p>
+      </p>
+      <p n="tagGroupList" h="24e" t="td:TagGroupInfoList">
+      </p>
+      <p n="relationList" h="24f" t="td:RelationInfoList">
+       <!-- /Services/TagDictionaryService/Niagara/tagRules/object$20tags/relationList/parent -->
+       <p n="parent" h="250" t="td:ComponentParentRelation">
+       </p>
+       <!-- /Services/TagDictionaryService/Niagara/tagRules/object$20tags/relationList/child -->
+       <p n="child" h="251" t="td:ComponentChildRelation">
+       </p>
+      </p>
+     </p>
+     <!-- /Services/TagDictionaryService/Niagara/tagRules/component$20tags -->
+     <p n="component$20tags" h="252" t="td:TagRule">
+      <p n="condition" h="253" t="td:IsTypeCondition">
+       <p n="objectType" t="b:TypeSpec" v="baja:Component"/>
+      </p>
+      <p n="tagList" h="254" t="td:TagInfoList">
+      </p>
+      <p n="tagGroupList" h="255" t="td:TagGroupInfoList">
+      </p>
+      <p n="relationList" h="256" t="td:RelationInfoList">
+      </p>
+     </p>
+     <!-- /Services/TagDictionaryService/Niagara/tagRules/network$20tags -->
+     <p n="network$20tags" h="257" t="td:TagRule">
+      <p n="condition" h="258" t="td:IsTypeCondition">
+       <p n="objectType" t="b:TypeSpec" v="driver:DeviceNetwork"/>
+      </p>
+      <p n="tagList" h="259" t="td:TagInfoList">
+       <!-- /Services/TagDictionaryService/Niagara/tagRules/network$20tags/tagList/network -->
+       <p n="network" h="25a" t="td:SimpleTagInfo">
+        <p n="validity" h="25b" t="td:IsTypeCondition">
+         <p n="objectType" t="b:TypeSpec" v="driver:DeviceNetwork"/>
+        </p>
+        <a n="addDataPolicy" f="h"/>
+       </p>
+      </p>
+      <p n="tagGroupList" h="25c" t="td:TagGroupInfoList">
+      </p>
+      <p n="relationList" h="25d" t="td:RelationInfoList">
+       <!-- /Services/TagDictionaryService/Niagara/tagRules/network$20tags/relationList/childDevice -->
+       <p n="childDevice" h="25e" t="td:ChildDeviceRelation">
+       </p>
+       <!-- /Services/TagDictionaryService/Niagara/tagRules/network$20tags/relationList/parentNetwork -->
+       <p n="parentNetwork" h="25f" t="td:ParentNetworkRelation">
+       </p>
+      </p>
+     </p>
+     <!-- /Services/TagDictionaryService/Niagara/tagRules/device$20tags -->
+     <p n="device$20tags" h="260" t="td:TagRule">
+      <p n="condition" h="261" t="td:IsTypeCondition">
+       <p n="objectType" t="b:TypeSpec" v="driver:Device"/>
+      </p>
+      <p n="tagList" h="262" t="td:TagInfoList">
+       <!-- /Services/TagDictionaryService/Niagara/tagRules/device$20tags/tagList/device -->
+       <p n="device" h="263" t="td:SimpleTagInfo">
+        <p n="validity" h="264" t="td:IsTypeCondition">
+         <p n="objectType" t="b:TypeSpec" v="driver:Device"/>
+        </p>
+        <a n="addDataPolicy" f="h"/>
+       </p>
+      </p>
+      <p n="tagGroupList" h="265" t="td:TagGroupInfoList">
+      </p>
+      <p n="relationList" h="266" t="td:RelationInfoList">
+       <!-- /Services/TagDictionaryService/Niagara/tagRules/device$20tags/relationList/childPoint -->
+       <p n="childPoint" h="267" t="td:ChildPointRelation">
+       </p>
+       <!-- /Services/TagDictionaryService/Niagara/tagRules/device$20tags/relationList/childNullProxyPoint -->
+       <p n="childNullProxyPoint" h="268" t="td:ChildNullProxyPointRelation">
+       </p>
+       <!-- /Services/TagDictionaryService/Niagara/tagRules/device$20tags/relationList/parentDevice -->
+       <p n="parentDevice" h="269" t="td:ParentDeviceRelation">
+       </p>
+       <!-- /Services/TagDictionaryService/Niagara/tagRules/device$20tags/relationList/childDevice -->
+       <p n="childDevice" h="26a" t="td:ChildDeviceRelation">
+       </p>
+       <!-- /Services/TagDictionaryService/Niagara/tagRules/device$20tags/relationList/parentNetwork -->
+       <p n="parentNetwork" h="26b" t="td:ParentNetworkRelation">
+       </p>
+      </p>
+     </p>
+     <!-- /Services/TagDictionaryService/Niagara/tagRules/point$20tags -->
+     <p n="point$20tags" h="26c" t="td:TagRule">
+      <p n="condition" h="26d" t="td:IsTypeCondition">
+       <p n="objectType" t="b:TypeSpec" v="control:ControlPoint"/>
+      </p>
+      <p n="tagList" h="26e" t="td:TagInfoList">
+       <!-- /Services/TagDictionaryService/Niagara/tagRules/point$20tags/tagList/point -->
+       <p n="point" h="26f" t="td:SimpleTagInfo">
+        <p n="validity" h="270" t="td:IsTypeCondition">
+         <p n="objectType" t="b:TypeSpec" v="control:ControlPoint"/>
+        </p>
+        <a n="addDataPolicy" f="h"/>
+       </p>
+       <!-- /Services/TagDictionaryService/Niagara/tagRules/point$20tags/tagList/history -->
+       <p n="history" h="271" t="td:HistoryIdTag">
+       </p>
+       <!-- /Services/TagDictionaryService/Niagara/tagRules/point$20tags/tagList/input -->
+       <p n="input" h="273" t="td:InputTag">
+        <p n="validity" h="274" t="td:IsTypeCondition">
+         <p n="objectType" t="b:TypeSpec" v="control:ControlPoint"/>
+        </p>
+        <a n="addDataPolicy" f="h"/>
+       </p>
+       <!-- /Services/TagDictionaryService/Niagara/tagRules/point$20tags/tagList/output -->
+       <p n="output" h="275" t="td:OutputTag">
+        <p n="validity" h="276" t="td:IsTypeCondition">
+         <p n="objectType" t="b:TypeSpec" v="control:ControlPoint"/>
+        </p>
+        <a n="addDataPolicy" f="h"/>
+       </p>
+      </p>
+      <p n="tagGroupList" h="277" t="td:TagGroupInfoList">
+      </p>
+      <p n="relationList" h="278" t="td:RelationInfoList">
+       <!-- /Services/TagDictionaryService/Niagara/tagRules/point$20tags/relationList/childPoint -->
+       <p n="childPoint" h="279" t="td:ChildPointRelation">
+       </p>
+       <!-- /Services/TagDictionaryService/Niagara/tagRules/point$20tags/relationList/childNullProxyPoint -->
+       <p n="childNullProxyPoint" h="27a" t="td:ChildNullProxyPointRelation">
+       </p>
+       <!-- /Services/TagDictionaryService/Niagara/tagRules/point$20tags/relationList/parentDevice -->
+       <p n="parentDevice" h="27b" t="td:ParentDeviceRelation">
+       </p>
+      </p>
+     </p>
+     <!-- /Services/TagDictionaryService/Niagara/tagRules/schedule$20tags -->
+     <p n="schedule$20tags" h="27c" t="td:TagRule">
+      <p n="condition" h="27d" t="td:IsTypeCondition">
+       <p n="objectType" t="b:TypeSpec" v="schedule:AbstractSchedule"/>
+      </p>
+      <p n="tagList" h="27e" t="td:TagInfoList">
+       <!-- /Services/TagDictionaryService/Niagara/tagRules/schedule$20tags/tagList/schedule -->
+       <p n="schedule" h="27f" t="td:SimpleTagInfo">
+        <p n="validity" h="280" t="td:IsTypeCondition">
+         <p n="objectType" t="b:TypeSpec" v="schedule:AbstractSchedule"/>
+        </p>
+        <a n="addDataPolicy" f="h"/>
+       </p>
+      </p>
+      <p n="tagGroupList" h="281" t="td:TagGroupInfoList">
+      </p>
+      <p n="relationList" h="282" t="td:RelationInfoList">
+      </p>
+     </p>
+    </p>
+   </p>
+   <p n="schemaVersion" v="2"/>
+  </p>
+ </p>
+ <!-- /Drivers -->
+ <p n="Drivers" h="1a" m="d=driver" t="d:DriverContainer">
+  <!-- /Drivers/NiagaraNetwork -->
+  <p n="NiagaraNetwork" h="1b" m="nd=niagaraDriver" t="nd:NiagaraNetwork">
+   <p n="health" t="d:PingHealth">
+    <p n="lastOkTime" t="b:AbsTime" v="2023-10-03T11:05:00.000+01:00"/>
+   </p>
+   <p n="alarmSourceInfo" h="1c" t="a:AlarmSourceInfo">
+    <p n="toOffnormalText" t="b:Format" v="%lexicon(driver:pingFail)%"/>
+    <p n="toNormalText" t="b:Format" v="%lexicon(driver:pingSuccess)%"/>
+   </p>
+   <p n="monitor" h="1d" t="d:PingMonitor">
+   </p>
+   <p n="localStation" h="131" t="nd:LocalSysDefStation">
+    <p n="stationName" v="uxSamples"/>
+    <p n="address" v="192.168.1.182"/>
+    <p n="foxPort" f="rL" t="b:Integer" v="1913"/>
+    <p n="foxsPort" f="rL" t="b:Integer" v="4913"/>
+    <p n="httpPort" f="rL" t="b:Integer" v="82"/>
+    <p n="httpsPort" f="rL" t="b:Integer" v="445"/>
+    <p n="niagaraDaemonPort" f="rL"/>
+    <p n="niagaraDaemonSslPort" f="rL"/>
+    <p n="services" t="b:NameList" v="box$3aBoxServlet;box$3aBoxService;niagaraDriver$3aNiagaraVirtualNetworkExt;history$3aHistoryService;app$3aAppContainer;box$3aBoxWebSocketAcceptor;platform$3aTcpIpPlatformService;platform$3aLicensePlatformService;baja$3aRoleService;platform$3aSystemPlatformServiceWin32;platBacnet$3aBacnetEthernetPlatformServiceWin32;jetty$3aJettyWebServer;baja$3aJobService;platform$3aPlatformServiceContainer;driver$3aDriverContainer;platCrypto$3aCertManagerService;platLon$3aLonPlatformServiceWin32;web$3aUserDataConfig;fox$3aFoxService;baja$3aAuthenticationService;history$3aLogHistoryService;platform$3aSyslogPlatformService;backup$3aBackupService;baja$3aCategoryService;alarm$3aAlarmService;web$3aClientEnvServlet;history$3aAuditHistoryService;tagdictionary$3aTagDictionaryService;web$3aWebService;baja$3aUserService;program$3aProgramService;niagaraDriver$3aNiagaraNetwork;baja$3aServiceContainer"/>
+    <p n="stationVersion" t="nd:SysDefVersion" v="1696326166281;7"/>
+    <p n="networkVersion" t="nd:SysDefVersion" v="1696326166281;0"/>
+    <p n="persistTask" h="132" t="nd:PersistTask">
+     <p n="lastSuccess" t="b:AbsTime" v="2023-10-03T11:05:36.756+01:00"/>
+     <p n="lastAttempt" t="b:AbsTime" v="2023-10-03T11:05:36.756+01:00"/>
+    </p>
+   </p>
+   <p n="sysDefProvider" h="20" t="nd:BogProvider">
+    <!-- /Drivers/NiagaraNetwork/sysDefProvider/uxSamples -->
+    <p n="uxSamples" f="h" h="1f6" t="nd:ProviderStation">
+     <p n="stationName" v="uxSamples"/>
+     <p n="address" v="192.168.1.182"/>
+     <p n="foxPort" v="1913"/>
+     <p n="foxsPort" v="4913"/>
+     <p n="httpPort" v="82"/>
+     <p n="httpsPort" v="445"/>
+     <p n="services" t="b:NameList" v="box$3aBoxServlet;box$3aBoxService;niagaraDriver$3aNiagaraVirtualNetworkExt;history$3aHistoryService;app$3aAppContainer;box$3aBoxWebSocketAcceptor;platform$3aTcpIpPlatformService;platform$3aLicensePlatformService;baja$3aRoleService;platform$3aSystemPlatformServiceWin32;platBacnet$3aBacnetEthernetPlatformServiceWin32;jetty$3aJettyWebServer;baja$3aJobService;platform$3aPlatformServiceContainer;driver$3aDriverContainer;platCrypto$3aCertManagerService;platLon$3aLonPlatformServiceWin32;web$3aUserDataConfig;fox$3aFoxService;baja$3aAuthenticationService;history$3aLogHistoryService;platform$3aSyslogPlatformService;backup$3aBackupService;baja$3aCategoryService;alarm$3aAlarmService;web$3aClientEnvServlet;history$3aAuditHistoryService;tagdictionary$3aTagDictionaryService;web$3aWebService;baja$3aUserService;program$3aProgramService;niagaraDriver$3aNiagaraNetwork;baja$3aServiceContainer"/>
+     <p n="stationVersion" t="nd:SysDefVersion" v="1696326166281;7"/>
+     <p n="networkVersion" t="nd:SysDefVersion" v="1696326166281;0"/>
+    </p>
+   </p>
+   <p n="tuningPolicies" h="23" t="nd:NiagaraTuningPolicyMap">
+    <p n="defaultPolicy" h="24" t="nd:NiagaraTuningPolicy">
+    </p>
+   </p>
+   <p n="historyPolicies" h="25" t="d:HistoryNetworkExt">
+    <p n="onDemandPollScheduler" h="26" t="d:HistoryPollScheduler">
+    </p>
+    <p n="defaultRule" h="27" t="d:ConfigRule">
+     <p n="capacity" t="h:Capacity" v="0:0"/>
+     <p n="fullPolicy" t="h:FullPolicy" v="roll"/>
+    </p>
+   </p>
+   <p n="workers" h="28" t="nd:CyclicThreadPoolWorker">
+    <p n="maxThreads" v="max"/>
+   </p>
+   <p n="virtualPolicies" h="29" t="nd:NiagaraVirtualNetworkExt">
+    <p n="cachePolicy" h="2a" m="nv=niagaraVirtual" t="nv:NiagaraVirtualCachePolicy">
+     <p n="cache" h="2b" t="nv:DefaultNiagaraVirtualCache">
+     </p>
+    </p>
+   </p>
+  </p>
+ </p>
+ <!-- /Apps -->
+ <p n="Apps" h="2c" m="app=app" t="app:AppContainer">
+ </p>
+ <!-- /Components -->
+ <p n="Components" h="1bc" t="b:Folder">
+  <!-- /Components/NumericWritable -->
+  <p n="NumericWritable" h="1bd" t="c:NumericWritable">
+   <p n="fallback" t="b:StatusNumeric"><p n="value" v="123.0"/></p>
+   <p n="wsAnnotation" t="b:WsAnnotation" v="3,2,12"/>
+  </p>
+  <p n="compass" m="bspl=bajaSamples" t="bspl:CompassEnum" v="south"/>
+  <!-- /Components/StringWritable -->
+  <p n="StringWritable" h="1bf" t="c:StringWritable">
+   <p n="fallback" t="b:StatusString"><p n="value" v="Hello"/></p>
+   <p n="wsAnnotation" t="b:WsAnnotation" v="3,10,12"/>
+  </p>
+ </p>
+</p>
+</bajaObjectGraph>

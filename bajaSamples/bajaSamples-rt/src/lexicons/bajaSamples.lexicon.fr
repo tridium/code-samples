@@ -1,0 +1,9 @@
+#
+# FR lexicon for the bajaSamples module.
+#
+
+# for BCompassEnum
+north=Nord
+south=Sud
+east=Est
+west=Ouest

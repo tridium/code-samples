@@ -30,7 +30,7 @@ module.exports = function runGrunt(grunt) {
     },
     babel: {
       options: {
-        presets: [ '@babel/preset-env', '@babel/preset-react' ],
+        presets: [ '@babel/preset-env' ],
         plugins: [ '@babel/plugin-transform-react-jsx' ]
       }
     },
